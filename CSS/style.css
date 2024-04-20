@@ -1,0 +1,301 @@
+/************************** ANIMATION CONTROLL*****************************************************/
+/*-------animation for imgs-------*/
+.animate-spin-img {
+    animation: animate-spin-img 45s linear infinite;
+}
+
+@keyframes animate-spin-img {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/********************* COLOR PATCH BLUR *****************/
+.color-patch-blur {
+    filter: blur(100px);
+}
+
+/**************** BODY ****************/
+body {
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+    background: black;
+
+}
+
+/********************* SET SCREEN SIZES ************************/
+/**--------------------------- Styles for laptops and desktops -------------------------*/
+@media screen and (min-width: 1025px) {
+    body {
+        /* Add laptop/desktop specific styles here */
+        overflow-x: hidden;
+    }
+
+    #tab_mobile {
+        display: none;
+    }
+
+    /***** FOR CATEGORY BUTTON *****/
+    #category_select {
+        display: none;
+        width: 320px;
+        position: absolute;
+        top: 240px;
+        left: 285px;
+    }
+
+    /***** FOR BRAND BUTTON *****/
+    #brand_select {
+        display: none;
+        width: 320px;
+        position: absolute;
+        top: 240px;
+        left: 860px;
+    }
+}
+
+/**-------------------- Adjust styles for laptops ------------------------*/
+@media screen and (max-width: 1024px) {
+
+    /* Example: */
+    body {
+
+        overflow-x: hidden;
+        /* Hide horizontal scrollbar */
+
+    }
+
+    #hero-img1 {
+        display: none;
+    }
+
+    #hero-img2 {
+        display: none;
+    }
+
+    #facebook-icon {
+        display: none;
+    }
+
+    #tab_mobile {
+        display: block;
+        position: relative;
+        left: 195px;
+    }
+
+    #lap_desktop {
+        display: none;
+    }
+
+    #aboutlogo {
+        display: none;
+    }
+
+    #about5 {
+        display: none;
+    }
+
+    /***** FOR CATEGORY BUTTON *****/
+    #category_select {
+        display: none;
+        width: 320px;
+        position: absolute;
+        top: 240px;
+        left: 140px;
+    }
+
+    /***** FOR BRAND BUTTON *****/
+    #brand_select {
+        display: none;
+        width: 320px;
+        position: absolute;
+        top: 240px;
+        left: 520px;
+    }
+
+}
+
+/**-------------------- Adjust styles for tablets -----------------------*/
+@media screen and (max-width: 912px) {
+
+    /* Example: */
+    body {
+        overflow-x: hidden;
+        /* Hide vertical scrollbar */
+
+    }
+
+    #hero-img1 {
+        display: none;
+    }
+
+    #hero-img2 {
+        display: none;
+    }
+
+    #facebook-icon {
+        display: none;
+    }
+
+    #tab_mobile {
+        display: block;
+        left: 55px;
+    }
+
+    #lap_desktop {
+        display: none;
+    }
+
+    #aboutlogo {
+        display: none;
+    }
+
+    #about5 {
+        display: none;
+    }
+
+    /***** FOR CATEGORY BUTTON *****/
+    #category_select {
+        display: none;
+        width: 270px;
+        position: absolute;
+        top: 290px;
+        left: 120px;
+    }
+
+    /***** FOR BRAND BUTTON *****/
+    #brand_select {
+        display: none;
+        width: 270px;
+        position: absolute;
+        top: 290px;
+        left: 460px;
+    }
+
+}
+
+/**-------------------- Adjust styles for mobile -----------------------*/
+@media screen and (max-width: 768px) {
+
+    /* Example: */
+    body {
+        overflow-x: hidden;
+        /* Hide vertical scrollbar */
+
+    }
+
+    #hero-img1 {
+        display: none;
+    }
+
+    #hero-img2 {
+        display: none;
+    }
+
+    #facebook-icon {
+        display: none;
+    }
+
+    #tab_mobile {
+        display: block;
+        left: 55px;
+    }
+
+    #lap_desktop {
+        display: none;
+    }
+
+    #aboutlogo {
+        display: none;
+    }
+
+    #about5 {
+        display: none;
+    }
+
+    /***** FOR CATEGORY BUTTON *****/
+    #category_select {
+        display: none;
+        width: 270px;
+        position: absolute;
+        top: 320px;
+        left: 120px;
+    }
+
+    /***** FOR BRAND BUTTON *****/
+    #brand_select {
+        display: none;
+        width: 270px;
+        position: absolute;
+        top: 320px;
+        left: 120px;
+    }
+
+}
+
+
+/************************** STORSE ***********************/
+.svg-icon.search-icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+
+    /* On hover: blue strokes */
+    &:focus,
+    &:hover {
+        .search-path {
+            stroke: #299ecc;
+        }
+    }
+
+    /* On click: thicker black strokes  */
+    &:active {
+        .search-path {
+            stroke: #111516;
+            stroke-width: 2px;
+        }
+    }
+}
+
+/*************NAV BAR******************/
+/* CSS for hiding the responsive navigation by default */
+#navMenu {
+    display: none;
+}
+
+/* Add additional styles for your navigation links and other elements as needed */
+
+
+/******************* TEXT AREA SCROLL BAR***************/
+textarea {
+    
+    scrollbar-width: thin; /* For Firefox, to ensure scrollbar is shown */
+    scrollbar-color: #a0a0a0 #f0f0f0; /* thumb and track color */
+  }
+  
+  textarea::-webkit-scrollbar {
+    width: 12px; /* width of the scrollbar */
+  }
+  
+  textarea::-webkit-scrollbar-thumb {
+    background: #a2063a; /* thumb color */
+    border-radius: 6px; /* round the thumb */
+  }
+  
+  textarea::-webkit-scrollbar-thumb:hover {
+    background: #065047; /* thumb color on hover */
+  }
+  
+  textarea::-webkit-scrollbar-track {
+    border-radius: 6px; /* round the track */
+  }
+  
+
+
+
+
+  
